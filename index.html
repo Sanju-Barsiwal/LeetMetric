@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMetric - Track Your Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 LeetMetric</h1>
+        <p class="subtitle">Track your LeetCode journey with style</p>
+
+        <!-- <div class="info-banner">
+            <strong>⚠️ CORS Notice:</strong>
+            This app requires CORS access to fetch LeetCode data. To use it:
+            <br>• <strong>Option 1:</strong> Visit <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">CORS Anywhere Demo</a> and request temporary access
+            <br>• <strong>Option 2:</strong> Use a CORS browser extension (like "CORS Unblock")
+            <br>• <strong>Option 3:</strong> Set up your own backend proxy for production use
+        </div> -->
+
+        <div class="user-container">
+            <p>Enter your LeetCode username:</p>
+            <div class="user-input-container">
+                <input type="text" placeholder="username" id="user-input" aria-label="LeetCode username">
+                <button id="search-btn" aria-label="Search user statistics">Search</button>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="progress">
+                <div class="progress-item">
+                    <div class="easy-progress circle">
+                        <span id="easy-label">0/0</span>
+                        <p>Easy</p>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="medium-progress circle">
+                        <span id="medium-label">0/0</span>
+                        <p>Medium</p>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="hard-progress circle">
+                        <span id="hard-label">0/0</span>
+                        <p>Hard</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-cards"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
